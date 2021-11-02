@@ -54,7 +54,12 @@ What are your next steps?
 - out next steps would be to fix the bugs we have in our code. To move further we are going to clean up our code to make it easier to point out the errors are running into. We will continue to work as a group to work on a big chunk of getting the card formatted correctly this week. 
 - We talked about what we want to be done with and created a timeline for our project
 ### Check-in 4
-- 
+- we have most of our project done, we just want to make this look a lot cooler
+- we met in class on thursday and worked as a group on Friday
+- we want to maybe change the fonts and make an inverted color
+- we want to integrate a few more design aspects
+- we still need to work on our sotrybooks and publishing this to NPM
+- our next step is looking at the rubric to make sure we did not miss anything, we want to make a prioritized list on what we have to work
 Questions In-Class: 
 What are the characteristics of the card? 
 - Banner at the top 
