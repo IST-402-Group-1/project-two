@@ -14,8 +14,6 @@ export class LearningBody extends SimpleColors {
           display: block;
           height: auto;
           min-height: 50px;
-          padding-left: 20%;
-          padding-right: 10%;
           font-size: 10pt;
           line-height: 15pt;
         }

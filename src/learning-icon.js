@@ -45,6 +45,14 @@ export class LearningIcon extends SimpleColors {
           height: var(--learning-header-height, 100px);
           width: var(--learning-header-width, 100px);
         }
+
+        @media only screen and (max-width: 700px) {
+          img {
+            height: var(--learning-header-height, 60px);
+            width: var(--learning-header-width, 60px);
+            padding-top: 3px;
+          }
+        }
       `,
     ];
   }

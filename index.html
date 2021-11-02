@@ -12,10 +12,12 @@
     body {
       margin: 0;
       padding: 50px;
+      padding-left: 0px;
       font-family: sans-serif;
     }
     .wrapper {
       margin: 100px;
+      align-items: center;
     }
     .menu {
       display: flex;
@@ -25,15 +27,6 @@
       display: inline-flex;
       font-weight: bold;
       padding: 40px;
-    }
-    learning-card.two::part(icon) {
-      --learning-card-height: 150px;
-      --learning-card-width: 150px;
-      background-color: blue;
-    }
-    learning-card[type="science"]::part(icon) {
-      width: 200px;
-      height: 200px;
     }
   </style>
   <title>Project two: learning card</title>
@@ -45,7 +38,7 @@
     <li><a href="/hax.html">HAX, card demo</a></li>
   </ul>
   <div class="wrapper">
-    <learning-card class="one" type="idea">
+    <learning-card type="idea" header="Unit 1" subheader="Chem Connection">
       <ul>
         <li>Describe the subatomic particles that make up an atom.</li>
         <li>Use the periodic table to determine the numbers of protons and electrons in a neutral(uncharged) atom.</li>
@@ -55,16 +48,21 @@
     </learning-card>
     <br>
     <br>
-    <learning-card class="two" type="science">
+    <learning-card type="science" header="Unit 1" subheader="Learning Objectives">
       <ul>
         <li>Describe the subatomic particles that make up an atom.</li>
-        <li>Use the periodic table to determine the numbersof protons and electrons in a neutral(uncharged) atom.</li>
+        <li>Use the periodic table to determine the numbers of protons and electrons in a neutral(uncharged) atom.</li>
       </ul>
     </learning-card>
     <br>
     <br>
-    <learning-card type="question">
+    <learning-card type="question" header="Unit 1" subheader="Did you know?">
       <p>There is about 0.4 pound or 200 grams of salt (NaCL) in the average adult human body.</p>
+    </learning-card>
+    <br>
+    <br>
+    <learning-card type="science" header="Header" subheader="Subheader">
+      <p>Body is slotted</p>
     </learning-card>
   </div>
   <script type="module">

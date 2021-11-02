@@ -74,14 +74,12 @@ export class LearningBanner extends SimpleColors {
 
   render() {
     return html`
-      <div class="banner">
-        <div>
-          <learning-icon type="${this.type}"></learning-icon>
-        </div>
-        <div class="headerArea">
-          <slot name="header"></slot>
-          <slot name="subheader"></slot>
-        </div>
+      <div class="iconArea">
+        <learning-icon type="${this.type}"></learning-icon>
+      </div>
+      <div class="headerArea">
+        <slot name="header"></slot>
+        <slot name="subheader"></slot>
       </div>
     `;
   }

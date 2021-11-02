@@ -10,8 +10,10 @@ export class LearningCard extends LitElement {
 
   constructor() {
     super();
-    this.myIcon = null;
-    this.type = 'science';
+    this.myIcon = 'beaker';
+    this.type = '';
+    this.header = 'Header';
+    this.subheader = 'Subheader';
   }
 
   static get properties() {
@@ -28,16 +30,10 @@ export class LearningCard extends LitElement {
     changedProperties.forEach((oldValue, propName) => {
       if (propName === 'type' && this[propName] === 'science') {
         this.myIcon = 'beaker';
-        this.header = 'UNIT 1';
-        this.subheader = 'CHEM CONNECTION';
       } else if (propName === 'type' && this[propName] === 'idea') {
         this.myIcon = 'lightbulb';
-        this.header = 'UNIT 1';
-        this.subheader = 'LEARNING OBJECTIVES';
       } else if (propName === 'type' && this[propName] === 'question') {
         this.myIcon = 'question';
-        this.header = 'UNIT 1';
-        this.subheader = 'DID YOU KNOW?';
       }
     });
   }
@@ -70,25 +66,53 @@ export class LearningCard extends LitElement {
         width: 600px;
       }
 
-      ul {
-        padding: 0px;
-      }
-
       .header {
         color: white;
         font-weight: 100;
         font-size: 30px;
-        padding-top: 17px;
+        padding-top: 19px;
+        margin: 0px;
+        text-transform: uppercase;
       }
 
       .subheader {
         color: white;
         font-weight: 500;
-        font-size: 30px;
+        font-size: 25px;
+        margin: 0px;
+        text-transform: uppercase;
       }
 
       learning-body {
         border: 1px solid black;
+        border-top: transparent;
+        margin: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 20%;
+        padding-right: 10%;
+      }
+
+      @media only screen and (max-width: 700px) {
+        learning-banner {
+          width: 400px;
+        }
+
+        learning-body {
+          padding-left: 10px;
+          padding-right: 10px;
+          width: 377px;
+          font-size: 12px;
+        }
+
+        .header {
+          font-size: 25px;
+          padding-top: 8px;
+        }
+
+        .subheader {
+          font-size: 20px;
+        }
       }
     `;
   }
@@ -98,8 +122,8 @@ export class LearningCard extends LitElement {
     return html`
       <learning-scaffold>
         <learning-banner slot="banner" type=${this.type}>
-          <div class="header" slot="header">${this.header}</div>
-          <div class="subheader" slot="subheader">${this.subheader}</div>
+          <h2 class="header" slot="header">${this.header}</h2>
+          <h3 class="subheader" slot="subheader">${this.subheader}</h3>
         </learning-banner>
         <learning-body slot="body">
           <slot></slot>
