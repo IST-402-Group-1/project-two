@@ -1059,6 +1059,14 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
+"@ist-402-group-1/kmbtn@0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@ist-402-group-1/kmbtn/-/kmbtn-0.0.1.tgz#9142b0c7d15691caaee28f5a33a0163c2cb6d617"
+  integrity sha512-nrPvdY6lJnNq/356DZffqceLjtYe35sFjc2kUBEziTf7vmNBXuDRdBXzLFVhPodfO5I5GBsqVXLNLWW4ScpkqA==
+  dependencies:
+    "@lrnwebcomponents/simple-icon" "^4.0.0"
+    lit "^2.0.0-rc.4"
+
 "@juggle/resize-observer@^3.0.0":
   version "3.3.1"
   resolved "https://registry.npmjs.org/@juggle/resize-observer/-/resize-observer-3.3.1.tgz"
@@ -1444,7 +1452,7 @@
     "@lrnwebcomponents/simple-colors" "^2.8.0"
     lit-element "2.4.0"
 
-"@lrnwebcomponents/simple-icon@^4.0.1":
+"@lrnwebcomponents/simple-icon@^4.0.0", "@lrnwebcomponents/simple-icon@^4.0.1":
   version "4.0.1"
   resolved "https://registry.npmjs.org/@lrnwebcomponents/simple-icon/-/simple-icon-4.0.1.tgz"
   integrity sha512-DXUhS5w3wJilhcPeRMHhT30njaNlagqAA6C1BVF+cxJmKlOQbE52C/1tDODW9AetQEXfAXBOkXic1Gy1BR7C/g==
@@ -4181,13 +4189,6 @@ flatted@^3.1.0:
   version "3.2.2"
   resolved "https://registry.npmjs.org/flatted/-/flatted-3.2.2.tgz"
   integrity sha512-JaTY/wtrcSyvXJl4IMFHPKyFur1sE9AUqc0QnhOaJ0CxHtAoIV8pYDzeEfAaNEtGkOfq4gr3LBFmdXW5mOQFnA==
-
-fphhbuttonfp-hh-button@^0.0.0:
-  version "0.0.0"
-  resolved "https://registry.npmjs.org/fphhbuttonfp-hh-button/-/fphhbuttonfp-hh-button-0.0.0.tgz"
-  integrity sha512-C56LJlmO1AFrJGJ9L+NJgyv/Wn25ujel0aR8/M11UbNnHhAIVSCXyt/LxybAz3PYRHMh6wen6dSMJvnQRI/XJA==
-  dependencies:
-    lit "^2.0.0-rc.4"
 
 frac@~1.1.2:
   version "1.1.2"

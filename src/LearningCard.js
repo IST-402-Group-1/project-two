@@ -98,13 +98,6 @@ export class LearningCard extends LitElement {
           width: 400px;
         }
 
-        learning-body {
-          padding-left: 10px;
-          padding-right: 10px;
-          width: 377px;
-          font-size: 12px;
-        }
-
         .header {
           font-size: 25px;
           padding-top: 8px;
@@ -112,6 +105,13 @@ export class LearningCard extends LitElement {
 
         .subheader {
           font-size: 20px;
+        }
+
+        learning-body {
+          padding-left: 10px;
+          padding-right: 10px;
+          width: 377px;
+          font-size: 14px;
         }
       }
     `;

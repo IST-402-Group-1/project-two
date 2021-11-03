@@ -14,7 +14,7 @@ export class LearningBody extends SimpleColors {
           display: block;
           height: auto;
           min-height: 50px;
-          font-size: 10pt;
+          font-size: 12pt;
           line-height: 15pt;
         }
       `,
