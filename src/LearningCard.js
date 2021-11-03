@@ -10,7 +10,6 @@ export class LearningCard extends LitElement {
 
   constructor() {
     super();
-    this.myIcon = 'beaker';
     this.type = '';
     this.header = 'Header';
     this.subheader = 'Subheader';
@@ -19,23 +18,9 @@ export class LearningCard extends LitElement {
   static get properties() {
     return {
       type: { type: String, reflect: true },
-      myIcon: { type: String, attribute: 'my-icon' },
       header: { type: String, reflect: true },
       subheader: { type: String, reflect: true },
     };
-  }
-
-  // updated fires every time a property defined above changes
-  updated(changedProperties) {
-    changedProperties.forEach((oldValue, propName) => {
-      if (propName === 'type' && this[propName] === 'science') {
-        this.myIcon = 'beaker';
-      } else if (propName === 'type' && this[propName] === 'idea') {
-        this.myIcon = 'lightbulb';
-      } else if (propName === 'type' && this[propName] === 'question') {
-        this.myIcon = 'question';
-      }
-    });
   }
 
   // Lit life-cycle; this fires the 1st time the element is rendered on the screen
@@ -145,7 +130,7 @@ export class LearningCard extends LitElement {
       contentEditable: true,
       gizmo: {
         title: 'Learning Card',
-        description: 'An element that you have to replace / fix / improve',
+        description: 'Editable card to display course topics and information',
         icon: 'credit-card',
         color: 'blue',
         groups: ['Content', 'Presentation', 'Education'],
@@ -158,8 +143,9 @@ export class LearningCard extends LitElement {
             description: 'Identifies the card',
             inputMethod: 'select',
             options: {
-              science: 'Science',
-              math: 'Math',
+              science: 'science',
+              idea: 'idea',
+              question: 'question',
             },
           },
         ],
