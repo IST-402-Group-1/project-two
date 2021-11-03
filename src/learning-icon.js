@@ -16,8 +16,6 @@ export class LearningIcon extends SimpleColors {
       type: { type: String, reflect: true },
       myIcon: { type: String },
       alt: { type: String },
-      // iconHeight: { type: String, attribute: 'i-height', reflect: true },
-      // iconWidth: { type: String, attribute: 'i-width', reflect: true },
     };
   }
 
@@ -25,8 +23,6 @@ export class LearningIcon extends SimpleColors {
     super();
     this.myIcon = 'science';
     this.alt = 'Science Icon';
-    // this.iHeight = 'inherit';
-    // this.iWidth = 'inherit';
   }
 
   static get styles() {
