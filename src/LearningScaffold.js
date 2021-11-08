@@ -1,20 +1,12 @@
-import { html, css } from 'lit';
-import { SimpleColors } from '@lrnwebcomponents/simple-colors/simple-colors.js';
+import { LitElement, html, css } from 'lit';
 
-export class LearningScaffold extends SimpleColors {
+export class LearningScaffold extends LitElement {
   static get tag() {
     return 'learning-scaffold';
   }
 
-  static get properties() {
-    return {
-      ...super.properties,
-    };
-  }
-
   static get styles() {
     return [
-      ...super.styles,
       css`
         :host {
           display: block;
