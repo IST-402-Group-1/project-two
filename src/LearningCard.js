@@ -2,6 +2,7 @@
 import { LitElement, html, css } from 'lit';
 import './learning-body.js';
 import './learning-banner.js';
+import './LearningScaffold.js';
 
 export class LearningCard extends LitElement {
   static get tag() {
