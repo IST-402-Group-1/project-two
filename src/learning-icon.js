@@ -22,7 +22,7 @@ export class LearningIcon extends SimpleColors {
   constructor() {
     super();
     this.myIcon = 'science';
-    this.alt = 'Science Icon';
+    this.alt = '';
   }
 
   static get styles() {
@@ -58,13 +58,10 @@ export class LearningIcon extends SimpleColors {
     changedProperties.forEach((oldValue, propName) => {
       if (propName === 'type' && this[propName] === 'science') {
         this.myIcon = beaker;
-        this.alt = this[propName];
       } else if (propName === 'type' && this[propName] === 'idea') {
         this.myIcon = lightbulb;
-        this.alt = this[propName];
       } else if (propName === 'type' && this[propName] === 'question') {
         this.myIcon = question;
-        this.alt = this[propName];
       }
     });
   }
