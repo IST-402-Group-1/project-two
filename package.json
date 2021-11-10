@@ -3,7 +3,7 @@
   "description": "Webcomponent project-two following open-wc recommendations",
   "license": "Apache-2.0",
   "author": "project-two",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/IST-402-Group-1/project-two"
